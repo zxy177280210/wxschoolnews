@@ -6,7 +6,7 @@
     <view class="user_bg1" wx:if="{{userInfo.avatarUrl == null}}"></view>
     <view class="user_info">
       <image wx:if="{{userInfo.avatarUrl != null}}" src="{{userInfo.avatarUrl}}" class="user_icon"></image>
-      <image wx:if="{{userInfo.avatarUrl == null}}" src="../../images/头像.jpg" class="user_icon"></image>
+      <image wx:if="{{userInfo.avatarUrl == null}}" src="../../images/a4.png" class="user_icon"></image>
       <view class="user_name">
       {{userInfo.nickName}}
       <button class="weui-btn" type="primary" wx:if="{{userInfo.avatarUrl == null}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
