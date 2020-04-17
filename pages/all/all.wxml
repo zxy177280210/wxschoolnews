@@ -1,0 +1,26 @@
+<view class="selection">    
+<view class="header">
+  <text> 全部活动</text>
+ 
+  </view>
+
+<view class="list-item" wx:for="{{list}}">
+<navigator url='/pages/detail/detail?id={{item.id}}'>
+  <view class="list-item-images">
+
+    <image src="{{item.url}}" class="list-item-images-img"></image>
+    
+    <image src="{{item.pic}}" class="avatar"> </image>
+</view>
+  <view class="list-item-text">
+    <view class="list-item-text-title">
+      <text>{{item.text}}</text>
+    </view>
+    <view class="list-item-text-content">
+      <text bindtap = 'goToDetail' data-id="{{item.id}}">{{item.content}}</text>
+    </view>
+ 
+  </view>
+ </navigator>
+</view>
+</view>

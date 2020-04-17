@@ -1,0 +1,107 @@
+<view class="selection">
+<view class='swiperBanner'>
+<swiper
+  indicator-dots="true"
+  autoplay="true"
+  interval="5000"
+  duration="500"
+>
+  
+    <swiper-item wx:for="{{list}}" wx:key="">
+     <navigator url='/pages/detail/detail?id={{item.id}}'>
+      <image src="{{item.url}}" class="slide-image"  />
+    </navigator>
+    </swiper-item>
+
+</swiper>
+</view>
+</view>
+
+
+<view class="plate">
+  <navigator url="/pages/all/all"hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="../../images/a1.png"></image>
+       </view>
+       <text class="plate-info">
+        活动资讯
+       </text>
+  </navigator>
+  <navigator url="/pages/usr/usr"hover-class="other-navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="../../images/a2.png"></image>
+       </view>
+       <text class="plate-info">
+        完善信息
+       </text>
+  </navigator>
+  <navigator url="/pages/order/order" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="../../images/a3.png"></image>
+       </view>
+       <text class="plate-info">
+        报名预约
+       </text>
+  </navigator>
+  <navigator url="/pages/US/US" hover-class="navigator-hover" class="plate-item">
+     <view class="plate-img">
+       <image src="../../images/a4.png"></image>
+       </view>
+       <text class="plate-info">
+        联系我们
+       </text>
+  </navigator>
+</view>
+
+<view class="selection">    
+  <view class="header">
+  <text> 猜你喜欢</text>
+  <navigator url='/pages/all/all'>
+  <text class="text-all">全部活动</text>
+  </navigator>
+  </view>
+
+  <view class="content" >
+  
+    <view  class="content-item" wx:for="{{list}}">
+    <image src="{{item.url}}" class="slide-image"  />
+      <navigator url='/pages/detail/detail?id={{item.id}}'>
+      <view class="content-item-text">
+        <text>{{item.text}}</text>
+       </view>
+      </navigator>
+    </view>
+    
+  </view>
+
+
+</view>
+
+<view class="selection">    
+<view class="header">
+  <text> 热门活动</text>
+  <navigator url='/pages/all/all'>
+  <text class="text-all">全部活动</text>
+  </navigator>
+  </view>
+
+<view class="list-item" wx:for="{{list}}">
+  <navigator url='/pages/detail/detail?id={{item.id}}'>
+  <view class="list-item-images">
+
+    <image src="{{item.url}}" class="list-item-images-img"></image>
+    
+    <image src="{{item.pic}}" class="avatar"> </image>
+</view>
+  <view class="list-item-text">
+    <view class="list-item-text-title">
+      <text>{{item.text}}</text>
+    </view>
+    <view class="list-item-text-content">
+      <text bindtap = 'goToDetail' data-id="{{item.id}}">{{item.content}}</text>
+    </view>
+ 
+  </view>
+ </navigator>
+</view>
+</view>

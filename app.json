@@ -1,0 +1,35 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/usr/usr",
+    "pages/all/all",
+    "pages/detail/detail",
+    "pages/US/US",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园资讯平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/sy2.png",
+        "selectedIconPath": "/images/sy1.png"
+      },
+      {
+        "pagePath": "pages/usr/usr",
+        "text": "我的",
+        "iconPath": "/images/my2.png",
+        "selectedIconPath": "/images/my1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

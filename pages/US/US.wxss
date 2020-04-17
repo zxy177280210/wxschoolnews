@@ -1,0 +1,19 @@
+/* pages/US/US.wxss */
+
+image{
+  width: 100%;
+}
+.text{
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  
+}
+.a{
+  padding: 30px;
+  line-height: 2;
+}
+.title{
+ font-size: 20px;
+ font-weight: bold;
+}

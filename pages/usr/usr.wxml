@@ -1,0 +1,50 @@
+
+
+<view class="user_info_wrap">
+  <view class="user_img_wrap" >
+    <image class="user_bg" wx:if="{{userInfo.avatarUrl != null}}" src="{{userInfo.avatarUrl}}"/>
+    <view class="user_bg1" wx:if="{{userInfo.avatarUrl == null}}"></view>
+    <view class="user_info">
+      <image wx:if="{{userInfo.avatarUrl != null}}" src="{{userInfo.avatarUrl}}" class="user_icon"></image>
+      <image wx:if="{{userInfo.avatarUrl == null}}" src="../../images/头像.jpg" class="user_icon"></image>
+      <view class="user_name">
+      {{userInfo.nickName}}
+      <button class="weui-btn" type="primary" wx:if="{{userInfo.avatarUrl == null}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="user-content">
+  <view class="user-main">
+    <view class="history_wrap">
+      <navigator url="../order/order">
+        <view class="his_num"> 0</view>
+        <view class="his_name">我的报名</view>
+      </navigator>
+      <navigator url="../order/order">
+        <view class="his_num"> 0</view>
+        <view class="his_name">我的发布</view>
+      </navigator>
+      <navigator url="../order/order">
+        <view class="his_num"> 0</view>
+        <view class="his_name">我的足迹</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+
+<!--菜单显示页面 -->
+<view  wx:for="{{menu}}" wx:key="menu" id = '{{item.id}}' bindtap='goto'>
+  <view id='menu'>
+    <image src='{{item.src}}'></image>
+    <text id='title'>{{item.title}}</text>
+    <text id='otherInfo'>{{item.otherInfo}}</text>
+    <text id='sign'> > </text>
+    <text id='info' style='height:{{item.height}}rpx'></text>
+  </view>
+</view>
+
+      
+  

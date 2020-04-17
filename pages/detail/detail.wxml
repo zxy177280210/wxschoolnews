@@ -1,0 +1,77 @@
+<!--pages/detail/detail.wxml-->
+<view class="weui-panel">
+  <image mode='widthFix'  src='{{list.url}}'></image>
+</view>
+<!-- 比赛场馆信息 -->
+		<view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <view class="weui-cell weui-cell_access weui-titles title" >
+                            <view class="weui-cell__bd weui-cell_primary ">
+                            	<view class="organize" style="float: left;line-height: 1.5;">{{list.text}}</view>
+                            </view>
+                        </view>
+                        <block>
+	                        <view class="weui-cell weui-cell_access" >
+								            <view class="weui-cell__bd weui-cell_primary ">
+	                                <view style="float: left;color:#999999;font-size: 0.98rem;">活动地点</view>
+	                                <view style="float: left;margin-left: 4%;font-size: 0.98rem;">{{list.shop}}</view>
+	                            </view>
+	                        </view>
+                          <view class="weui-cell weui-cell_access" >
+								            <view class="weui-cell__bd weui-cell_primary ">
+	                                <view style="float: left;color:#999999;font-size: 0.98rem;">活动时间</view>
+	                                <view style="float: left;margin-left: 4%;font-size: 0.98rem;">{{list.time}}</view>
+	                            </view>
+	                        </view>
+                          <view class="weui-cell weui-cell_access" >
+								            <view class="weui-cell__bd weui-cell_primary ">
+	                                <view style="float: left;color:#999999;font-size: 0.98rem;">活动类型</view>
+	                                <view style="float: left;margin-left: 4%;font-size: 0.98rem;">{{list.type}}</view>
+	                            </view>
+	                        </view>
+                          <view class="weui-cell weui-cell_access" >
+								            <view class="weui-cell__bd weui-cell_primary ">
+	                                <view style="float: left;color:#999999;font-size: 0.98rem;">报名费用</view>
+	                                <view style="float: left;margin-left: 4%;font-size: 0.98rem;">{{list.coin}}/人</view>
+	                            </view>
+	                        </view>
+                          <view class="weui-cell weui-cell_access" >
+								            <view class="weui-cell__bd weui-cell_primary ">
+	                                <view style="float: left;color:#999999;font-size: 0.98rem;">已报名人数</view>
+	                                <view style="float: left;margin-left: 4%;font-size: 0.98rem;">{{list.num}}人</view>
+	                            </view>
+	                        </view>
+                        </block>
+                       
+                    </view>
+                </view>
+            </view>
+        </view>
+
+<!-- 组织机构信息 -->
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg"> 
+                    	<view class="weui-cell weui-cell_access weui-titles title" >
+                            <view class="weui-cell__bd weui-cell_primary ">
+                            	<view class="organize">活动内容介绍</view>
+                            </view>
+                        </view>                  
+                        <view class="weui-cell weui-cell_access weui-assess" >
+							<view class="weui-cell__bd weui-cell_primary ">
+							<block>
+                               		<view class="sec_desc">{{list.content}}</view>
+								</block>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <button  class="weui-btn" type="primary"  wx:if = '{{isAdd}}' bindtap="cancelFavorites">已报名</button>
+        <button  class="weui-btn" type="primary"  wx:else bindtap = "addFavorites">报名</button>
+        
+        <view class="page__ft">123</view>

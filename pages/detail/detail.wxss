@@ -1,0 +1,30 @@
+/* pages/detail/detail.wxss */
+image{
+  width: 100%;
+}
+.organize{
+	font-size: 12pt;
+	float: left;
+	line-height: 1.5;
+	margin-top: 1.5%;
+	border-left: 3px solid limegreen;
+	padding-left: 1.5%;
+	font-weight: 500;
+}
+.sec_title{
+	font-size: 0.95rem;
+	font-weight: 400;
+}
+.sec_desc{
+  margin: 1.5% 0;
+	font-size: 0.9rem;
+}
+/*button*/
+button[type="primary"] {
+	color:#FFFFFF;
+	background-color:limegreen;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+

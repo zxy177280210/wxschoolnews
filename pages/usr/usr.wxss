@@ -1,0 +1,124 @@
+page{
+  background-color: #ddd;
+}
+.user_info_wrap{
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+
+  
+
+}
+.user_img_wrap{
+  position: relative;
+}
+.user_bg{
+  height:45vh;
+  width: 100%;
+  filter: blur(10rpx);
+
+}
+.user_bg1{
+  height:45vh;
+  width: 100%;
+  background-color: rgb(255, 217, 0);
+
+}
+.user_info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user_icon{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.user_name{
+  color: #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+
+}
+.user_content{
+  position: relative;
+}
+.user_main{
+  position: absolute;
+  width:90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+
+}
+.history_wrap{
+  background-color: #fff;
+  display: flex;
+}
+.history_wrap navigator{
+  flex: 1;
+  text-align:center;
+  padding: 10rpx o;
+}
+.his_num{
+  color:red;
+}
+
+/* 菜单栏 */
+#menu{
+  /* border: 1px solid black ; */
+  overflow: hidden;
+  padding: 20rpx 40rpx;
+  height: 70rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+#menu image{
+  float: left ;
+  width: 70rpx;
+  height: 70rpx;
+}
+#title{
+  float: left;
+  overflow: hidden;
+  font-size: 35rpx;
+  color: #999;
+  line-height: 70rpx;
+  margin-left: 40rpx;
+  /* border: 1px solid black ; */
+  width: 300rpx;
+  height: 70rpx;
+}
+#otherInfo{
+  float: left;
+  font-size: 32rpx;
+  text-align: right;
+  color: #ccc;
+  overflow: hidden;
+  line-height: 70rpx;
+  width: 150rpx;
+  height: 70rpx;
+}
+#info{
+  /* border: 1px solid black ; */
+  overflow: hidden;
+  margin-right: 30rpx;
+  border-radius: 40% ;
+  text-align: center ;
+  float:right;
+  background: red;
+  width: 20rpx;
+  height: 20rpx;
+}
+#sign{
+  /* border: 1px solid black ; */
+  float: right ;
+  font-size: 50rpx;
+  line-height: 70rpx;
+  text-align: center;
+  width: 20rpx ;
+  height: 70rpx;
+  color: #ccc
+}
